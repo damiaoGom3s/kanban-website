@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do</title>
+    
+    <!--is testing-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+        html {
+            scroll-behavior: smooth;
+        }
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            width: 100vw;
+            background-color: #22092C;
+        }
+        nav {
+            width: 100vw;
+            height: 20vh;
+            color: #F05941;
+            font-family: 'Outfit', sans-serif;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        nav a {
+            text-decoration: none;
+            background-color: #22092C;
+        }
+        nav a:hover {
+            color: #F05941;
+            border-bottom: solid 2px;
+        }
+        .kanban {
+            height: 60vh;
+            display: flex;
+            justify-content: space-evenly;
+            font-family: 'Outfit', sans-serif;
+        }
+        /**/
+        .kanban .todo {
+            height: 50vh;
+            border: solid 1px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .kanban .todo h3 {
+            color: #F05941;
+            margin-bottom: 10px;
+        }
+        .kanban .todo .item-todo {
+            background-color: #872341;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        /**/
+        .kanban .doing {
+            height: 50vh;
+            border: solid 1px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .kanban .doing h3 {
+            color: #F05941;
+            margin-bottom: 10px;
+        }
+        .kanban .doing .item-doing {
+            background-color: #BE3144;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        /**/
+        .kanban .done {
+            height: 50vh;
+            border: solid 1px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .kanban .done h3 {
+            color: #F05941;
+            margin-bottom: 10px;
+        }
+        .kanban .done .item-done {
+            background-color: #F05941;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        /**/
+        .create-item {
+            height: 20vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .create-item button {
+            margin-top: 20px;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            color: aliceblue;
+            background-color: #F05941;
+            font-family: 'Outfit', sans-serif;
+            box-shadow: 0px 0px 20px black;
+        }
+        /**/
+        .about{
+            height: 20vh;
+            width: 100vw;
+            color: #F05941;
+            font-family: 'Outfit', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .about img {
+            margin-top: 20px;
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Kanban website</h1>
+        <h2><a href="#about">about</a></h2>
+    </nav>
+
+    <div class="kanban">
+        <div class="todo">
+            <h3>To do</h3>
+            <div class="item-todo" id="0">Snake Game</div>
+        </div>
+        <div class="doing">
+            <h3>Doing</h3>
+            <div class="item-doing" id="1">Estudar POO</div>
+        </div>
+        <div class="done">
+            <h3>Done</h3>
+            <div class="item-done" id="2">SUDOKU Game</div>
+        </div>
+    </div>
+
+    <div class="create-item">
+        <button>Add new item</button>
+    </div>
+
+    <div class="about" id="about">
+        <h2>About</h2>
+        <p>This page was created for educational and portfolio purposes.</p>
+        <a href="https://github.com/damiaoGom3s"><img src="images/github.png" alt=""></a>
+    </div>
+</body>
+</html>
